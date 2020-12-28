@@ -26,3 +26,10 @@ button{
     border-radius: 4px;
     letter-spacing: 2px;
 }
+
+button:hover{
+    background: white;
+    border: 1px solid #2e2b2b;
+    color: #2e2b2b;
+    cursor: pointer;
+}
