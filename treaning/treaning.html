@@ -3,30 +3,85 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first html document</title>
+    <title>My first html & css</title>
 
     <style>
     
     </style>
     <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
+
         <h1 style="margin-left:500px;">First Staps In HTML & CSS</h1>
+
         <img src="./20190401_092223.jpg" alt="My photo"style="width:360px;height:230px;">
-    <h2 style="margin-left:570px;">
-        WRITE SOMETHING
-    </h2>
-    <h2 style="color:blue;">Lists exercise</h2>
-    <p>Sistem tehnology</p>
-    <h2 style="color: blue;">Tables exercise</h2>
-    <p>Sistem tehnology</p>
-    <h2 style="color: blue;">Form exercise</h2>
-    <p>Sistem tehnology</p>
+    
+        <h2 style="margin-left: 600px;">
+        <p style="color: blue;">Text exercises</p>
+        </h2>
 
+        <h2 style="margin-left:570px;">
+            <p> WRITE SOMETHING</p>
+        </h2>
 
-    <p>
+        <p style="margin-left: 600px;">
         We love <strong> HTML</strong> and <em>CSS</em>
-    </p>
+        </p>
+
+    <h2 style="color:blue;">Lists exercise</h2>
+     <!--unordered list-->
+    
+     <ul>
+        <!--List item-->
+        <li>
+            First
+        </li>
+        <li>
+            Second
+        </li>
+
+    </ul>
+
+    <!--Ordered list-->
+    <ol>
+        <li>
+            First
+        </li>
+        <li>
+            Second
+        </li>
+    </ol>
+
+    
+    <h2 style="color: blue;">Form exercise</h2>
+
+    <form action="">
+        <input type="number" id="firstNumber"> + 
+        <input type="number" id="secondNumber"> = 
+        <input type="number" id="result">
+    </form>
+
+<form action="">
+    <input type="button" id="calculateButton" value="calculate">
+</form>
+
+ <script>
+     function calculate(){
+        let firstNumber = parseInt(document.getElementById("firstNumber").value);
+        let secondeNumber = parseInt(document.getElementById("secondNumber").value);
+        
+        document.getElementById("result").value = firstNumber + secondeNumber;
+
+     }
+
+     let calculateButton = document.getElementById("calculateButton");
+     calculateButton.addEventListener("click", calculate);
+
+ </script>
+
+    <h2 style="color: blue;">Tables exercises</h2>
+   
     <table>
         <tr>
             <td><strong>name</strong></td>
@@ -53,6 +108,7 @@
 
     </table>
    <br/>
+
     <table>
         <tr>
             <td>certificate Programming Fund</td>
@@ -63,6 +119,7 @@
        
     </table>
     <br/>
+
     <table>
         <tr>
             <td>certificate Programming Basics</td>
@@ -72,34 +129,12 @@
         </tr>
     </table>
 
-    <!--unordered list-->
-    
-    <ul>
-        <!--List item-->
-        <li>
-            First
-        </li>
-        <li>
-            Second
-        </li>
-
-    </ul>
-
-    <!--Ordered list-->
-    <ol>
-        <li>
-            First
-        </li>
-        <li>
-            Second
-        </li>
-    </ol>
-
+   <br/>
     <table>
         <tr>
             <td>Name</td>
             <td>Age</td>
-            <td>Number</td>
+            <td>Day</td>
         </tr>
         <tr>
             <td>Nikolai</td>
