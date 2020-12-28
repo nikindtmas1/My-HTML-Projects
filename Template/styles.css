@@ -3,3 +3,26 @@ body{
     background: rgb(157, 211, 50);
     
 }
+h1{
+    color: rgba(234, 71, 255, 0.726);
+    font-family: 'Times New Roman', Times, serif;
+}
+#firstH2{
+    color: rgb(219, 27, 85);
+}
+
+.red{
+
+    color: red;
+    border: 1px solid black;
+}
+
+button{
+    color: white;
+    text-transform: uppercase;
+    background: #2e2b2b;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}

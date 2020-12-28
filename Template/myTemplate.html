@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first html & css</title>
 
     <style>
-    
+
     </style>
     <link rel="stylesheet" href="styles.css">
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <h1 style="margin-left:500px;">First Staps In HTML & CSS</h1>
+    <button>Click me</button>
+    <h1 style="margin-left:500px;">First Staps In HTML & CSS</h1>
 
-        <img src="./20190401_092223.jpg" alt="My photo" style="width:360px;height:230px;">
-    
-        <h2 style="margin-left: 600px;">
+    <img src="./20190401_092223.jpg" alt="My photo" style="width:360px;height:230px;">
+
+    <h2 style="margin-left: 600px;">
         <p style="color: blue;">Text exercises</p>
-        </h2>
+    </h2>
 
-        <h2 style="margin-left:570px;">
-            <p> WRITE SOMETHING</p>
-        </h2>
+    <h2 style="margin-left:570px;">
+        <p id="firstH2"> WRITE SOMETHING</p>
+    </h2>
 
-        <p style="margin-left: 600px;">
+    <p style="margin-left: 600px;">
         We love <strong> HTML</strong> and <em>CSS</em>
-        </p>
+    </p>
 
     <h2 style="color:blue;">Lists exercise</h2>
-     <!--unordered list-->
-    
-     <ul>
+    <!--unordered list-->
+
+    <ul>
         <!--List item-->
         <li>
             First
@@ -53,35 +55,35 @@
         </li>
     </ol>
 
-    
+
     <h2 style="color: blue;">Form exercise</h2>
 
     <form action="">
-        <input type="number" id="firstNumber"> + 
-        <input type="number" id="secondNumber"> = 
+        <input type="number" id="firstNumber"> +
+        <input type="number" id="secondNumber"> =
         <input type="number" id="result">
     </form>
 
-<form action="">
-    <input type="button" id="calculateButton" value="calculate">
-</form>
+    <form action="">
+        <input type="button" id="calculateButton" value="calculate">
+    </form>
 
- <script>
-     function calculate(){
-        let firstNumber = parseInt(document.getElementById("firstNumber").value);
-        let secondeNumber = parseInt(document.getElementById("secondNumber").value);
-        
-        document.getElementById("result").value = firstNumber + secondeNumber;
+    <script>
+        function calculate() {
+            let firstNumber = parseInt(document.getElementById("firstNumber").value);
+            let secondeNumber = parseInt(document.getElementById("secondNumber").value);
 
-     }
+            document.getElementById("result").value = firstNumber + secondeNumber;
 
-     let calculateButton = document.getElementById("calculateButton");
-     calculateButton.addEventListener("click", calculate);
+        }
 
- </script>
+        let calculateButton = document.getElementById("calculateButton");
+        calculateButton.addEventListener("click", calculate);
+
+    </script>
 
     <h2 style="color: blue;">Tables exercises</h2>
-   
+
     <table>
         <tr>
             <td><strong>name</strong></td>
@@ -93,9 +95,9 @@
             <td><input type="password"></td>
             <td><input type="number"></td>
         </tr>
-        
+
     </table>
-        
+
     <table>
 
         <tr>
@@ -104,32 +106,32 @@
         <tr>
             <td><input type="submit"></td>
         </tr>
-        
+
 
     </table>
-   <br/>
+    <br />
 
     <table>
         <tr>
-            <td>certificate Programming Fund</td>
+            <td class="red">certificate Programming Fund</td>
         </tr>
         <tr>
             <td><a href="https://softuni.bg/certificates/details/94652/144de3cc">Programming fund</a></td>
         </tr>
-       
+
     </table>
-    <br/>
+    <br />
 
     <table>
         <tr>
-            <td>certificate Programming Basics</td>
+            <td class="red">certificate Programming Basics</td>
         </tr>
         <tr>
             <td><a href="https://softuni.bg/certificates/details/82315/e3559d79">Programming Basics</a></td>
         </tr>
     </table>
 
-   <br/>
+    <br />
     <table>
         <tr>
             <td>Name</td>
@@ -152,5 +154,6 @@
             <td>24</td>
         </tr>
     </table>
-    </body>
+</body>
+
 </html>
